@@ -1,0 +1,28 @@
+ <h3>{{viewTitle}}</h3>
+<form action="/sanpham/edit/{{this._id}}" method="post" autocomplete="off">
+<input type="hidden" name="id" value="{{sanpham.id}}">
+  <div class="form-group">
+        <label for="">Mã Sản Phẩm</label>
+        <input type="text" name="maSp" value="{{sanpham.maSp}}" class="form-control" placeholder="">
+  </div>
+  <div class="form-group">
+        <label for="">Tên Sản Phẩm</label>
+        <input type="text" name="tenSp" class="form-control" placeholder="">
+  </div>
+  <div class="form-group">
+        <label for="">Loại Sản Phẩm</label>
+        <input type="text" name="loai" class="form-control" placeholder="">
+  </div>
+  <div class="form-group">
+        <label for="">Giá</label>
+        <input type="text" name="gia" class="form-control" placeholder="">
+  </div>
+  <div class="form-group">
+        <label for="">Màu</label>
+        <input type="text" name="mau" class="form-control" placeholder="">
+  </div>
+  <div class="form-group">
+    <button class="btn btn-info" type="submit">Submit form</button>
+      <a href="/sanpham/list" class="btn btn-primary">View List</a>
+  </div>
+</form>
